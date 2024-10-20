@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    line-height: 50px;
+}
+
+#container{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.caja{
+    display: block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#caja1{
+    background-color: brown;
+}
+
+#caja2{
+    background-color: red;
+}
+
+#caja3{
+    background-color: yellow;
+}
+
+#caja4{
+    background-color: blue;
+}
+
+#caja5{
+    background-color: green;
+}
+
+#caja6{
+    background-color: orange;
+}
+
+/*posicionamiento*/
+
+/*Ej1*/
+
+/*
+#caja3{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+*/
+
+/*La tercera caja queda superpuesta sobre la caja 4
+porque el espacio dejado por la caja 3 sigue perteneciendo a esta misma caja*/
+
+/*Ej2*/
+
+/*
+#caja3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+*/
+
+/*La tercera caja se sitúa en la esquina superior derecha porque
+se mueve respecto al body y no al contenedor*/
+
+/*
+#container{
+    position: relative;
+}
+*/
+
+/*Al establecer un position: relative al contenedor en el que se encuentra 
+la caja 3 su punto de referencia absoluto pasa a ser container y no body,
+por eso se sitúa por encima de la caja 1 y 2*/
+
+/*Ej3*/
+
+/*
+h2{
+    position: fixed;
+    width: 100%;
+    background-color: red;
+}
+*/
+
+/*Al aplicar position: fixed, h2 se fija a la ventana y permanece siempre 
+en esa posición aún haciendo scroll*/
